@@ -22,7 +22,7 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
 
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:3000'
+  origin: allowedOrigins
 }))
 app.use(express.json())
 
